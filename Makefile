@@ -38,4 +38,7 @@ docs: docs/.nojekyll
 docs/%.html: src/%.md template.html5 Makefile tools/build.sh
 	tools/build.sh "$<" "$@"
 
+docs/%.pdf: src/%.md template.html5 Makefile tools/build.sh
+	tools/build.sh "$<" "$@"
+
 
