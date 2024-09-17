@@ -54,6 +54,4 @@ pandoc \
   --wrap=none \
   --verbose \
   --output "$dest" \
-  "$src" 
-
-cat $src | wkhtmltopdf -s B5 --footer-center "[page]" --footer-font-name Palatino -L 20mm -R 20mm -T 15mm -B 15mm - _release/$(VERSION)/$(NAME).pdf
+  "$src"
